@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c |tr [.c] [.o]
+export $CFILE|gcc -c $CFILE |tr [.c] [.o]
