@@ -1,2 +1,2 @@
 #!/bin/bash
-export= $CFILE|gcc -c -S $CFILE|tr [.c] [.s]
+export $CFILE|gcc -c -S $CFILE|tr [.c] [.s]
