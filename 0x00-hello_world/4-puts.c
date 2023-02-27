@@ -1,6 +1,8 @@
 #include <stdio.h>
 
-/*the function prints out this*/
+/*
+ * main is the entry point
+ */
 
 int main(void)
 {
