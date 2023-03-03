@@ -12,7 +12,7 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 	if (n>0) {
-		printf("rand() - RAND_MAX / 2 is postive \n");
+		printf("%d is a postive number\n",n);
 	}
 
 	else if	("n=0") {
