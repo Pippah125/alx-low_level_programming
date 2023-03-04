@@ -11,9 +11,9 @@ int main (void)
 	char lower = 'a';
 
 	for(upper = 'A' ; upper <= 'Z'; upper++)
+		putchar(upper);
 	for (lower = 'a' ; lower <= 'z'; lower ++)
 	putchar(lower);
-	putchar(upper);
 	putchar('\n');
 	
 	return (0);
