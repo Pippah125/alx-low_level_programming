@@ -1,9 +1,28 @@
 #include<stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	int Char;
-	Char=sizeof(char);
-	printf("Size of a char: %d bytes(s)", Char );
+	 int Char;
+        Char=sizeof(char);
+        int INT;
+        INT=sizeof(int);
+        int LongInt;
+        LongInt=sizeof(long int);
+        int LLInt;
+        LLInt=sizeof(long long int);
+        int FLOAT;
+        FLOAT=sizeof(float);
+        printf("Size of a char: %d bytes(s)", Char );
+        printf("Size of an int : %d bytes(s)", INT);
+        printf("Size of a long int: %d bytes(s)",LongInt);
+	printf("Size of a long long int: %d bytes(s)",LLInt);
+	printf("Size of a long long int: %d bytes(s)", FLOAT);
 
-	return(0);
+        return(0);
 }
+
