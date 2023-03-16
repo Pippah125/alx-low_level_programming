@@ -8,7 +8,7 @@
 int main(void);
 {
  	int Char;
- 	Char = sizeof(char)       
+ 	Char = sizeof(char);       
  	int INT;
         INT = sizeof(int);
         int LongInt;
