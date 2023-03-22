@@ -2,7 +2,7 @@
 /**
  * function is lower to indicate if an alphabet is lower
  *
- * 
+ *
  */
 int _islower(int c)
 {
