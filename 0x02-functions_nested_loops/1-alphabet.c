@@ -6,7 +6,11 @@
  */
 
 void print_alphabet(void)
-
+/**
+ * print_alphabet and return zero
+ *
+ * Return: void
+ */
 {
 	char b;
 
