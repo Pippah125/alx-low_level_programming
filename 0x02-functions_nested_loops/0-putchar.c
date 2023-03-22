@@ -1,12 +1,12 @@
-#include<stdio.h>
+#include<unistd.h>
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
 int main(void)
 {
-	int a = 95;
-       int b = 112; 
-       int c =117; 
-       int d = 116;
-	printf("%c",a);
-	printf("%c",b);
+	char A;
+	A = '_';
+	_putchar(A);
 	return(0);
 }
-
