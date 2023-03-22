@@ -5,13 +5,19 @@
  */
 #include "main.h"
 /**
- * print alphabets in ascending order
+ * print alphabets
  *
  * Return: void
  */
 
 void print_alphabet(void)
 {
+
+/**
+ * print alphabets
+ *
+ * Return: void
+ */
 	char b;
 
 	for (b = 'a'; b <= 'z'; b++)
