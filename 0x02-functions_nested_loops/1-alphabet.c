@@ -1,16 +1,16 @@
-#include "main.h"
 /**
  * main - check the code
  *
  * Return: Always 0.
  */
-
-void print_alphabet(void)
+#include "main.h"
 /**
- * print_alphabet and return zero
+ * print alphabets in ascending order
  *
  * Return: void
  */
+
+void print_alphabet(void)
 {
 	char b;
 
