@@ -3,7 +3,9 @@
  *
  * Return: Always 0.
  */
+
 #include "main.h"
+
 /**
  * print alphabets
  *
@@ -13,11 +15,6 @@
 void print_alphabet(void)
 {
 
-/**
- * print alphabets
- *
- * Return: void
- */
 	char b;
 
 	for (b = 'a'; b <= 'z'; b++)
