@@ -1,14 +1,8 @@
 #include<unistd.h>
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
-
 int main(void)
 {
+	int p;
+	write(1,"_putchar\n",13);
 
-	char A;
-	A = '_';
-	_putchar(A);
 	return(0);
 }
