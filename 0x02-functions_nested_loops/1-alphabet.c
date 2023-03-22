@@ -1,11 +1,15 @@
 #include<unistd.h>
 #include "main.h"
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
 void print_alphabet(void)
 {
-        char A;
-        for(A = 'a'; A <= 'z'; A++)
+        char b;
+        for(b = 'a'; b <= 'z'; b++)
 	{
-             _putchar(A);
+             _putchar(b);
 	}
 }
 
