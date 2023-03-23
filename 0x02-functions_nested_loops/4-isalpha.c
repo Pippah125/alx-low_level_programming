@@ -1,9 +1,10 @@
 #include "main.h"
 int _isalpha(int c)
 {
-	char alpha;
-		if (alpha >= 'a'; alpha <= 'a' alpha++) || (alpha >= 'A' ; alpha <= 'Z' alpha++);
+	int alpha;
+		if
+		((alpha >= 'a' &&  alpha <= 'z')||(alpha >= 'A' && alpha <= 'Z'))
 		return(1);
-		else 
+		else
 			return(0);
 }
