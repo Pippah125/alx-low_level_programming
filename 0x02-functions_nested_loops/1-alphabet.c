@@ -7,7 +7,6 @@
 #include "main.h"
 void print_alphabet(void)
 {
-
 	char b;
 
 	for (b = 'a'; b <= 'z'; b++)
@@ -15,5 +14,9 @@ void print_alphabet(void)
 
 	_putchar('\n');
 }
-
+/**
+* print__alphabets - write out alphabets
+* 
+* Description: list out the alphabets.
+*/
 
