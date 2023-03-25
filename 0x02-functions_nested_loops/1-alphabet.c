@@ -7,16 +7,11 @@
 #include "main.h"
 
 /**
- * print- alphabets
- *
- * Return: void
- */
-
+          * print_alphabets
+          * return(0)
+          */
 void print_alphabet(void)
-{	/**
-	  * print_alphabets
-	  * return(0)
-	  */
+{
 
 	char b;
 
