@@ -5,11 +5,6 @@
  */
 
 #include "main.h"
-
-/**
-          * print_alphabets
-          * return(0)
-          */
 void print_alphabet(void)
 {
 
