@@ -5,6 +5,11 @@
  */
 
 #include "main.h"
+/**
+* print__alphabets - write out alphabets
+*
+* Description: list out the alphabets.
+*/
 void print_alphabet(void)
 {
 	char b;
@@ -16,7 +21,7 @@ void print_alphabet(void)
 }
 /**
 * print__alphabets - write out alphabets
-* 
+*
 * Description: list out the alphabets.
 */
 
