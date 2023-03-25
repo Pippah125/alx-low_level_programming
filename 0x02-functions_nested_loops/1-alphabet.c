@@ -6,7 +6,7 @@
 
 #include "main.h"
 /**
-* print__alphabets - write out alphabets
+* print_alphabet - write out alphabets
 *
 * Description: list out the alphabets.
 */
