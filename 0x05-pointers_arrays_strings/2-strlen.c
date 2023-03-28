@@ -2,8 +2,9 @@
 int _strlen(char *s)
 {
 	int num;
+
 	num = 0;
-		for(; *s !='\0'; s++)
+		for( ; *s != '\0'; s++)
 		{
 			num++;
 		}
