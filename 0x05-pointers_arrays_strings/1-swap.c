@@ -3,5 +3,5 @@ void swap_int(int *a, int *b)
 {
 	int bel;
 	bel = *a;
-	*b =  *a;
+	*b = bel;
 }
