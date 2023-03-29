@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-*swap - swap the value of a to be
+*swap_int(int *a, int *b)- changes a to b
 *@swap_int(int *a, int *b): swaps the value of a to b
 *@a: will be changed to b
 *@b: will be chaned to a
