@@ -4,7 +4,7 @@
 /**
  * _strcat - copies string A to string B
  * @dest: The input value
- * @src: The input value 
+ * @src: The input value
  *
  * Return: void
  */
@@ -14,7 +14,7 @@ char *_strcat(char *dest, char *src)
 	int B;
 
 	A = 0;
-	while(dest[A] != 0)
+	while (dest[A] != 0)
 	{
 		A++;
 	}
