@@ -5,6 +5,7 @@
  * @dest: The string to be copied
  * @src: The string to be added to
  *
+ * Return: void
  */
 char *_strcat(char *dest, char *src)
 {
