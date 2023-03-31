@@ -2,8 +2,8 @@
 
 /**
  * _strcat - copies string A to string B
- * @dest: The string to be copied
- * @src: The string to be added to
+ * @dest: The input value
+ * @src: The input value 
  *
  * Return: void
  */
