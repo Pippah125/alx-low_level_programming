@@ -1,4 +1,11 @@
 #include "main.h"
+
+/**
+ * _isalpha - checks if a letter is an alphabet
+ * @c: value to be checked
+ *
+ * return 0
+ */
 int _isalpha(int c)
 {
 
