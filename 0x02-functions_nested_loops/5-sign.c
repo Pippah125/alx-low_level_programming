@@ -3,7 +3,7 @@
  *  print_sign - print the sign of an int
  *  @n: int to be printed
  *
- *  return (0)
+ *  Return (0)
  */
 int print_sign(int n)
 {
@@ -16,4 +16,4 @@ int print_sign(int n)
 	else
 	{_putchar('-');
 	return (-1); }
-}	
+}
