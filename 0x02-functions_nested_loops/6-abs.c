@@ -3,14 +3,12 @@ int _abs(int n)
 {
 	int b;
 
-	if ("n == 0")
-	_putchar(n);
+	if ("n == 0"){
+	return (n);}
 	else if ("n < 0")
 	{	b = -1*n;
-	_putchar(b);}
-	else 
-	{
-	_putchar(n);}
-	return(n);
+	return (b);}
+	else {
+	return(n);}
 }
 
