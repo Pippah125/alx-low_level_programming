@@ -3,7 +3,7 @@
  *  print_sign - print the sign of an int
  *  @n: int to be printed
  *
- *  Return : 0 
+ *  Return: 0
  */
 int print_sign(int n)
 {
