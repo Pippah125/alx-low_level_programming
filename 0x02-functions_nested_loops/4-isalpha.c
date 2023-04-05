@@ -4,7 +4,7 @@
  * _isalpha - checks if a letter is an alphabet
  * @c: value to be checked
  *
- * return: 1 if a letter is an alphabet.
+ * Return: 1 if a letter is an alphabet.
  *
  */
 int _isalpha(int c)
