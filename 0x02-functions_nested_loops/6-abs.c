@@ -6,7 +6,7 @@ int _abs(int n)
 	else if (n > 0)
 	{
 	_putchar(n);}
-	else (n < 0);
+	else 
 	{
 	_putchar(+n);}
 	return(0);
