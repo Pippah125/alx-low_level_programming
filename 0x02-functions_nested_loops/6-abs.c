@@ -1,8 +1,9 @@
 #include "main.h"
 int _abs(int n)
 {
-	if ("n = 0"){
-	return (n);}
+	if ("n = 0")
+	{
+	_putchar(n);}
 	else if ("n < 0")
 	{	int b;
 		b = n * -1;
@@ -10,7 +11,7 @@ int _abs(int n)
 	}
 	else 
 	{
-	return(n);
+	_putchar(n);
 	}
 
 
