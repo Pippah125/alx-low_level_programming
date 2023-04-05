@@ -7,7 +7,8 @@ int _abs(int n)
 	return (n);}
 	else if (n < 0)
 	{	b = -1 * n;
-	return (b);}
+	return (b);
+	return (n);}
 	else {
 	return(n);}
 }
