@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _puts_recursion - copies string using recursion
- * @*s: string to be copied
+ * s: string to be copied
  *
  * Return: 0
  */
