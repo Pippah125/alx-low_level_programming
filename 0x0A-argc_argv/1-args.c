@@ -4,7 +4,7 @@
  * @argc: count the number of arguments given to main
  * @argv: arguments given to main but to be ignore during the counting
  *
- * return: 0
+ * Return: 0
  *
  */
 int main(int argc, char *argv[])
