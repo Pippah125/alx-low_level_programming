@@ -20,3 +20,4 @@ void rev_string(char *s)
 		betty --;
 		_putchar(s[betty]);
 	}
+}
