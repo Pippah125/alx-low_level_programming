@@ -21,6 +21,6 @@ void rev_string(char *s)
 	{
 		betty --;
 		_putchar(s[betty]);
-		_putchar(\n);
+		_putchar('\n');
 	}
 }
