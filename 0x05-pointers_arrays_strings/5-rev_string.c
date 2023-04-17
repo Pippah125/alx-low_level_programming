@@ -16,12 +16,12 @@ void rev_string(char *s)
 	
 		betty ++;
 	}
-	betty --;
 	
 	while (betty >= 0)
 	{
 		_putchar(s[betty]);
 		betty --;
+		 _putchar('\0');
 	}
-	_putchar('\0');
+
 }
