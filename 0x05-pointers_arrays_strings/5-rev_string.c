@@ -15,14 +15,13 @@ void rev_string(char *s)
 	{
 	
 		betty ++;
-		_putchar(s[betty]);
 	}
 	
 	while (betty >= 0)
 	{
+		betty --;
 		_putchar(s[betty]);
 		betty --;
-		 _putchar('\0');
 	}
 
 }
