@@ -16,8 +16,9 @@ void rev_string(char *s)
 	
 		betty ++;
 	}
+	betty --;
 	
-	while (betty > 0)
+	while (betty >= 0)
 	{
 		_putchar(s[betty]);
 		betty --;
