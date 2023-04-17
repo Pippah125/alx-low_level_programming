@@ -20,7 +20,7 @@ void rev_string(char *s)
 	while (betty > 0)
 	{
 		_putchar(s[betty]);
-		betty;
+		betty --;
 	}
 	_putchar('\0');
 }
