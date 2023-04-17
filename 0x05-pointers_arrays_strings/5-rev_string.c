@@ -19,8 +19,8 @@ void rev_string(char *s)
 	
 	while (betty > 0)
 	{
-		betty --;
 		_putchar(s[betty]);
+		betty;
 	}
 	_putchar('\0');
 }
