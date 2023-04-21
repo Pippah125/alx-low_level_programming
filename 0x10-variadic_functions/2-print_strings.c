@@ -10,11 +10,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		{
 			char *x;
 			x = va_arg(array,char*);
-				printf("%s",x);
-				if(separator != NULL && y != (n-1))
-				{
-					printf("%s", separator);
-				}
 			if ( x == NULL)
 			{
 				printf("nil");
@@ -23,6 +18,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			{
 				printf("%s",x);
 			}
+			if(separator != NULL && y != (n-1))
+                                {
+                                        printf("%s", separator);
+                                }
 		}
 	va_end(array);
 	printf("\n");
