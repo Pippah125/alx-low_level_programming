@@ -9,12 +9,11 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		va_start(betty,n);
 		for(d = 0; d < n; d++)
 		{ 
-			 if (separator == NULL)
-                continue;
-			 else
+			 if ( separator != NULL)
 				 printf("%s",separator);
 		x = va_arg(betty,unsigned int);
 		printf("%d",x);
-		printf("\n");}
+		}
+		printf("\n");
 		va_end(betty);
 }
