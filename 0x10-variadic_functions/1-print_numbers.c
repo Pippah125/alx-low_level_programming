@@ -3,14 +3,13 @@
 #include<stdarg.h>
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	
+	unsigned int d;
+	int x;
 	va_list betty;
 		va_start(betty,n);
-		unsigned int d;
-		int x;
 		for(d = 0; d < n; d++)
 		{ 
-			 if (separator = NULL)
+			 if (separator == NULL)
                 continue;
 		x = va_arg(betty,unsigned int);
 		printf("%d",x);
