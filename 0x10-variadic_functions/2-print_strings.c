@@ -3,9 +3,9 @@
 #include<stdarg.h>
 void print_strings(const char *separator, const unsigned int n, ...)
 {
+	unsigned int y;
 	va_list array;
 	va_start(array, n);
-	unsigned int y;
 		for(y = 0; y < n; y++)
 		{
 			int x;
@@ -15,7 +15,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 				{
 					printf("%s", separator);
 				}
-			if ( y = NULL)
+			if ( y == NULL)
 			{
 				printf("nil");
 			}
