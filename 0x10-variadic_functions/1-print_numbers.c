@@ -11,6 +11,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		{ 
 			 if (separator == NULL)
                 continue;
+			 else
+				 printf("%s",separator);
 		x = va_arg(betty,unsigned int);
 		printf("%d",x);
 		printf("\n");}
