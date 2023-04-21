@@ -18,10 +18,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		x = va_arg(betty, unsigned int);
 		printf("%d", x);
-			if (separator != NULL && d != (n - 1))
-			{
-				 printf("%s", separator);
-			}
+		if (separator != NULL && d != (n - 1))
+		{
+			printf("%s", separator);
+		}
 	}
 		printf("\n");
 		va_end(betty);
