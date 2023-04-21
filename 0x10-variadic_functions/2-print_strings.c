@@ -10,7 +10,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		{
 			int x;
 			x = va_arg(array,int);
-				printf("%s",x);
+				printf("%d",x);
 				if(separator != NULL)
 				{
 					printf("%s", separator);
