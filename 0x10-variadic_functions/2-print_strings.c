@@ -8,14 +8,14 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_start(array, n);
 		for(y = 0; y < n; y++)
 		{
-			int x;
-			x = va_arg(array,int);
-				printf("%d",x);
-				if(separator != NULL)
+			char *x;
+			x = va_arg(array,char);
+				printf("%s",x);
+				if(separator != NULL && y != (n-1))
 				{
 					printf("%s", separator);
 				}
-			if ( y == NULL)
+			if ( x == NULL)
 			{
 				printf("nil");
 			}
