@@ -9,7 +9,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		for(y = 0; y < n; y++)
 		{
 			char *x;
-			x = va_arg(array,char);
+			x = va_arg(array,char*);
 				printf("%s",x);
 				if(separator != NULL && y != (n-1))
 				{
@@ -18,6 +18,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			if ( x == NULL)
 			{
 				printf("nil");
+			}
+			else
+			{
+				printf("%s",x);
 			}
 		}
 	va_end(array);
