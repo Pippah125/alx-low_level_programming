@@ -4,7 +4,7 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list array;
-	va_start(array, n)
+	va_start(array, n);
 	unsigned int y;
 		for(y = 0; y < n; y++)
 		{
