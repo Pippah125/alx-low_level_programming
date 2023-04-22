@@ -2,7 +2,7 @@
 #include<stdlib.h>
 int int_index(int *array, int size, int (*cmp)(int))
 {       
-        unsigned int q;
+         int q;
         if (array == NULL || cmp == NULL)
         {
                 return (-1);
