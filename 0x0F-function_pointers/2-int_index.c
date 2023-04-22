@@ -16,4 +16,5 @@ int int_index(int *array, int size, int (*cmp)(int))
 		cmp(array[q]);
 		return (1);
 	}
+	return (0);
 }
