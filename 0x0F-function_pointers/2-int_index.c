@@ -9,14 +9,14 @@
  * Return: 0
  */
 int int_index(int *array, int size, int (*cmp)(int))
-{       
-         int q;
-        if (array == NULL || cmp == NULL || size <= 0)
-        {
-                return (-1);
-        }
-        
-	for(q = 0; q < size; q++)
+{
+	int q;
+
+	if (array == NULL || cmp == NULL || size <= 0)
+	{
+		return (-1);
+	}
+	for (q = 0; q < size; q++)
 	{
 		if (cmp(array[q]))
 		{
