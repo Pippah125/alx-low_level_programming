@@ -2,7 +2,7 @@
 #include<stdlib.h>
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	size_t n;
+	unsigned int  n;
 	for (n = 0; n <= size; n++)
-	action(array[size]);
+	action(array[n]);
 }
