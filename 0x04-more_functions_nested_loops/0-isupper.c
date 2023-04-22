@@ -1,18 +1,13 @@
-/**
- * main - check the code.
- *
- * Return: Always 0.
- */
 #include "main.h"
 /**
- * _isupper-checks if alphabet is Uppercase
- * return 1 if true 
- * return 0 if false
+ * _isupper - checks for alphabet
+ * @c:character to be checked
+ *
+ * Return: 0
  */
-
 int _isupper(int c)
 {
-	if(c >= 'A' && c<= 'Z')
+	if (c >= 'A' && c <= 'Z')
 	{
 		return (1);
 	}
