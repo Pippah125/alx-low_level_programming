@@ -5,7 +5,7 @@ void print_dog(struct dog *d)
 {
 	 if (d == NULL)
                 return;
-	d = &my_dog;
+	d = &dog;
 	d->name = name;
 	d->age = age;
 	d->owner = owner;
