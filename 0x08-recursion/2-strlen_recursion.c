@@ -1,10 +1,10 @@
 #include"main.h"
 int _strlen_recursion(char *s)
 {
-	int i;
-	int j = 0;
-	for ( i = 0; s[i] != '\0'; s++)
-		j++;
+	int i = 0
+	if (*s != '\0')
+	{	i++;
+	}
 	_strlen_recursion(s);
-	return j;
+	return (i);
 }
