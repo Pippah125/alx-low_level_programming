@@ -4,11 +4,11 @@ int print_last_digit(int a)
 	int b;
 	b = a %  10;
 	if (b < 0)
-	{	return( -b *-1);
+	{	_putchar(-b *-1);
 	}
 	else 
 	{
-		return (b);
+		_putchar(b);
 	}
 	return(b + 0);
 }
