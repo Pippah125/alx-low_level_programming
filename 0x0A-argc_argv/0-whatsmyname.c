@@ -4,6 +4,7 @@
  * @argc: count arguments given to main
  * @argv: print arguments given to main
  *
+ * Return: 0
  */
 int main(__attribute__((unused))int argc, char *argv[])
 {
