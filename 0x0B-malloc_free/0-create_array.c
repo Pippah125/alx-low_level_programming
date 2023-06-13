@@ -2,7 +2,7 @@
 #include"main.h"
 char *create_array(unsigned int size, char c)
 {
-	int x;
+	unsigned int x;
 	char *array = malloc(sizeof(char) * size);
 	if(size == 0)
 	{
@@ -12,9 +12,9 @@ char *create_array(unsigned int size, char c)
 	{
 		return(NULL);
 	}
-	for(x = 0; c != '\0'; c++)
+	for(x = 0; x < size ; x++)
 	{
-		x++;
+		array[x] = c;
 	}
 	free(array);
 	return(0);
