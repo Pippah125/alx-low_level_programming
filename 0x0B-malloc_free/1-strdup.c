@@ -14,16 +14,20 @@ char *_strdup(char *str)
 
 	while (str[x] != '\0')
 	{
-		betty[y] = str[x];
 		x++;
-		y++;
 	}
 
-	betty = malloc(sizeof(char) *(y+1));
+	betty = malloc(sizeof(char) *(x+1));
+
 	
 	if(betty == NULL)
 	{
 		return(NULL);
+	}
+	while(str[y])
+	{
+		betty[y] = str[y];
+			y++;
 	}
 	betty[y] = '\0';
 	return(betty);
