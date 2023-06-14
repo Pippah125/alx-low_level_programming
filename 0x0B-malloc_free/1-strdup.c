@@ -1,12 +1,18 @@
 #include "main.h"
 #include <stdlib.h>
 char *_strdup(char *str)
-{	
-	char *betty;
+{	char *betty;
 	int x;
 	int y;
-	*betty= malloc(sizeof(char) *(y+1));
-	if (str == NULL || betty == NULL)
+	y = 0;
+	x = 0;
+
+	if (str == NULL)
+	{
+		return(NULL);
+	}
+	betty = malloc(sizeof(char) *(y+1));
+	if(betty == NULL)
 	{
 		return(NULL);
 	}
@@ -17,5 +23,6 @@ char *_strdup(char *str)
 		x++;
 		y++;
 	}
+	betty[y] = '\0';
 	return(betty);
 }
