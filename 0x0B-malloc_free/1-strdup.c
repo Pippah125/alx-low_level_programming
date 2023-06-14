@@ -11,7 +11,7 @@ char *_strdup(char *str)
 	{
 		return(NULL);
 	}
-	betty = malloc(sizeof(char) *(y+1));
+	betty = malloc(sizeof(char) *(y));
 	if(betty == NULL)
 	{
 		return(NULL);
