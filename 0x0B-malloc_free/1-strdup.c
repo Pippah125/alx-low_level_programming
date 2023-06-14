@@ -11,17 +11,19 @@ char *_strdup(char *str)
 	{
 		return(NULL);
 	}
-	betty = malloc(sizeof(char) *(y));
-	if(betty == NULL)
-	{
-		return(NULL);
-	}
 
 	while (str[x] != '\0')
 	{
 		betty[y] = str[x];
 		x++;
 		y++;
+	}
+
+	betty = malloc(sizeof(char) *(y+1));
+	
+	if(betty == NULL)
+	{
+		return(NULL)
 	}
 	betty[y] = '\0';
 	return(betty);
