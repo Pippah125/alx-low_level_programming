@@ -5,24 +5,17 @@ char *_strdup(char *str)
 	char *betty;
 	int x;
 	int y;
-	if (str == NULL)
+	*betty= malloc(sizeof(char) *(y+1));
+	if (str == NULL || betty == NULL)
 	{
 		return(NULL);
 	}
 
-	while (y = 0)
+	while (str[x] != '\0')
 	{
-		str[y] != '\0'
-			y++;
-	}
-	*betty = malloc(sizeof(char) *(y +1))
-		if(betty == NULL)
-		{
-			return(NULL);
-		}
-	for(x = 0; betty[x]; x++)
-	{
-		betty[x] = str[x]
+		betty[y] = str[x];
+		x++;
+		y++;
 	}
 	return(betty);
 }
