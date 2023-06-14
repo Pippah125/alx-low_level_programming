@@ -1,13 +1,22 @@
 #include"main.h"
 #include<stdlib.h>
+/**
+ * str_concat - adds two strings together
+ * @s1: first string to bee added
+ * @s2: to be added to first string
+ *
+ * Return: success
+ */
 char *str_concat(char *s1, char *s2)
 {
-	char* betty;
+	char *betty;
 	int y;
 	int x;
+
 	y = 0;
-	x =0;
-	if(s1 == NULL)
+	x = 0;
+
+	if (s1 == NULL)
 	{
 		s1 = "";
 	}
@@ -15,31 +24,33 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-	while(s1[y] != '\0')
+	while (s1[y] != '\0')
 	{
 		y++;
 	}
-	while(s2[x] != '\0')
+	while (s2[x] != '\0')
 	{
 		x++;
 	}
-	betty = malloc(sizeof(char)*(y + x + 1));
+	betty = malloc(sizeof(char) * (y + x + 1));
+
 		if (betty == NULL)
 		{
-			return(NULL);
+			return (NULL);
 		}
-	y =0 ; x = 0;
-		while(s1[y] != '\0')
+	y = 0;
+	x = 0;
+		while (s1[y] != '\0')
 		{
 			betty[y] = s1[y];
 				y++;
 		}
-	while(s2[x] != '\0')
+	while (s2[x] != '\0')
 	{
 		betty[y] = s2[x];
 		y++;
 		x++;
 	}
 	betty[y] = '\0';
-	return(betty);
+	return (betty);
 }
