@@ -23,7 +23,7 @@ char *_strdup(char *str)
 	
 	if(betty == NULL)
 	{
-		return(NULL)
+		return(NULL);
 	}
 	betty[y] = '\0';
 	return(betty);
