@@ -1,9 +1,9 @@
 #include<stdio.h>
-int main(__attribute__((unused))int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int i;
 	i = 0;
-	while(argv[i] != NULL)
+	while(i < argc)
 	{
 		printf("%s",argv[i]);
 			i++;
