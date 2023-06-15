@@ -10,12 +10,12 @@ int main(__attribute__((unused))int argc, char *argv[])
 	b= atoi(argv[2]);
 	result = (a * b);
 
-	if (a == '\0')
+	if (argv[1] == NULL)
 	{
 		printf("Error\n");
 		return(1);
 	}
-	if (b == '\0')
+	if (argv[2] == NULL)
 	{
 		printf("Error\n");
 		return (1);
