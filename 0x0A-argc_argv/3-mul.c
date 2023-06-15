@@ -13,6 +13,7 @@ int main(__attribute__((unused))int argc, char *argv[])
 	if (a == '\0' || b == '\0')
 	{
 		printf("Error\n");
+		return(1);
 	}
 	printf("%d\n",result);
 		return(0);
