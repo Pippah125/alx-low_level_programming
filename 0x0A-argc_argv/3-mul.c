@@ -17,7 +17,7 @@ int main(__attribute__((unused))int argc, char *argv[])
 	}
 	if (b == '\0')
 	{
-		printf("Error\n";
+		printf("Error\n");
 		return (1);
 	}
 	printf("%d\n",result);
