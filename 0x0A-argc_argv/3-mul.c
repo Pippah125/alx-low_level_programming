@@ -10,10 +10,15 @@ int main(__attribute__((unused))int argc, char *argv[])
 	b= atoi(argv[2]);
 	result = (a * b);
 
-	if (a == '\0' || b == '\0')
+	if (a == '\0')
 	{
 		printf("Error\n");
 		return(1);
+	}
+	if (b == '\0')
+	{
+		printf("Error\n";
+		return (1);
 	}
 	printf("%d\n",result);
 		return(0);
