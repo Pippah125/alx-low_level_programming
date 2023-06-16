@@ -6,7 +6,7 @@ void *malloc_checked(unsigned int b)
 	betty = malloc(sizeof(b));
 	if(betty == NULL)
 	{
-		return(void*)98;
+		exit(98);
 	}
 	return(betty);
 }
