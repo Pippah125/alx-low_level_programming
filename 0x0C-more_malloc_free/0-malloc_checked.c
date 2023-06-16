@@ -3,7 +3,7 @@
 void *malloc_checked(unsigned int b)
 {
 	void* betty;
-	betty = malloc(sizeof(b));
+	betty = malloc((b));
 	if(betty == NULL)
 	{
 		exit(98);
