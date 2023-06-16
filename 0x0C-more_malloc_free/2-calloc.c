@@ -4,11 +4,11 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *betty;
-	betty = malloc(nmemb * size);
 		if (nmemb == 0 || size == 0)
 		{
 			return(NULL);
 		}
+		betty = malloc(nmemb * size);
 	if (betty == NULL)
 	{
 		return(NULL);
