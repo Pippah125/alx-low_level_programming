@@ -1,5 +1,6 @@
 #include"main.h"
 #include<stdlib.h>
+#include<string.h>
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *betty;
@@ -12,5 +13,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return(NULL);
 	}
+	memset(betty,0, nmemb *size);
 	return(betty);
 }
