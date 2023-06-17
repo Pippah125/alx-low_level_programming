@@ -11,11 +11,15 @@ int *array_range(int min, int max)
 {
 	int *betty;
 	int x;
+	int y;
 	if (min > max)
 	{
 		return(NULL);
 	}
-	betty = malloc(sizeof(int) * max - min + 1);
+	y = max - min + 1;
+
+	betty = malloc(sizeof(int) * y);
+
 	if (betty == NULL)
 	{
 		return(NULL);
