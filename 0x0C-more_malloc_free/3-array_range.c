@@ -20,9 +20,9 @@ int *array_range(int min, int max)
 	{
 		return(NULL);
 	}
-	while(min <= max)
+	while(x = 0)
 	{
-		x = 0;
+		min <= max;
 		x++;
 		betty[x] = min++;
 	}
