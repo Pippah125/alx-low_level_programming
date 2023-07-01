@@ -16,10 +16,13 @@ void rev_string(char *s)
 	
 		betty ++;
 	}
+	for( i = 0; s[i] != '\0'; i++)
+	{
+		_putchar(s[i]);
+	}
 	for(i = betty - 1; i >= 0; i--)
 	{
 		_putchar(s[i]);
-		_putchar('\n');
 	}
 
 }
