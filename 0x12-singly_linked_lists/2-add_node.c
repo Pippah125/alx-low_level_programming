@@ -1,7 +1,12 @@
 #include<string.h>
 #include<stdlib.h>
 #include "lists.h"
-
+/**
+ * count - return length of string
+ * @z: string to be counted
+ *
+ * @Return: string len
+ */
 int count(const char *z)
 {
 	int t = 0;
@@ -13,6 +18,13 @@ int count(const char *z)
 	return(t);
 }
 
+/**
+ * add_node - add new node to beginning of linked list
+ * @head: linked list
+ * @str: string to add to the node
+ *
+ * @Return:address of new node
+ */
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *tail;
