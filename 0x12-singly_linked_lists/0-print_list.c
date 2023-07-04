@@ -10,22 +10,21 @@ size_t print_list(const list_t *h)
 		struct list_s *next;
 	} list_t;
 	size_t count;
-	list_t *head;
-	head = (list_t *)h;
+	list_t *head = (list_t *)h;
 	count = 0;
-	while(head != NULL)
+	while(head!= NULL)
 	{
 
-	 	if( head ->str == NULL)
+	 	if( head->str == NULL)
 	 	{
 	 	printf("[%lu] (nil)\n",count);
 	 	}
 	 	else
 	 	{
-		 printf("[%lu] %s\n", count, head -> str);
+		 printf("[%lu] %s\n", count, head-> str);
 	 	}
+		head = head-> next;
 		count++;
-		head  = head ->next;
 	}
 	 return(count);
 }
