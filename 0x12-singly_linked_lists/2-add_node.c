@@ -5,17 +5,18 @@
  * count - return length of string
  * @z: string to be counted
  *
- * @Return: string len
+ * Return: string len
  */
 int count(const char *z)
 {
 	int t = 0;
-	while(*z != '\0')
+
+	while (*z != '\0')
 	{
 		z++;
 		t++;
 	}
-	return(t);
+	return (t);
 }
 
 /**
@@ -23,24 +24,24 @@ int count(const char *z)
  * @head: linked list
  * @str: string to add to the node
  *
- * @Return:address of new node
+ * Return:address of new node
  */
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *tail;
-	if(head != NULL && str != NULL)
+
+	if (head != NULL && str != NULL)
 	{
 		tail = malloc(sizeof(list_t));
 	}
-	if(tail == NULL)
+	if (tail == NULL) 
 	{
 		return(NULL);
 	}
-	tail ->str = strdup(str);
-	tail -> len= count(str);
-	tail -> next = *head;
+	tail->str = strdup(str);
+	tail-> len = count(str);
+	tail-> next = *head;
 	*head = tail;
-	return(tail);
-	
+	return (tail);
 }
 
