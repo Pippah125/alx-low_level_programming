@@ -34,13 +34,13 @@ list_t *add_node(list_t **head, const char *str)
 	{
 		tail = malloc(sizeof(list_t));
 	}
-	if (tail == NULL) 
+	if (tail == NULL)
 	{
-		return(NULL);
+		return (NULL);
 	}
 	tail->str = strdup(str);
-	tail-> len = count(str);
-	tail-> next = *head;
+	tail->len = count(str);
+	tail->next = *head;
 	*head = tail;
 	return (tail);
 }
