@@ -5,7 +5,7 @@
  * @n: number to check
  * @a:loop through number
  *
- * Retrun: 0
+ * Retrun: Always success
  */
 int betty(int n, int a)
 {
