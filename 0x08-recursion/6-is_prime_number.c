@@ -21,7 +21,7 @@ int betty(int n, int a)
 	{
 		return (1);
 	}
-	return (betty(n , a + 1));
+	return (betty(n, a + 1));
 }
 /**
  * is_prime_number - checks if a number is prime
@@ -31,5 +31,5 @@ int betty(int n, int a)
  */
 int is_prime_number(int n)
 {
-	return (betty(n , 1));
+	return (betty(n, 1));
 }
