@@ -17,7 +17,7 @@ int betty (int n, int z)
 	{
 		return(z);
 	}
-        return(square(n, z+1));
+        return(betty(n, z+1));
 }		              
 
 /**
