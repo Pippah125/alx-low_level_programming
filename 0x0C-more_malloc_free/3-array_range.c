@@ -9,25 +9,25 @@
  */
 int *array_range(int min, int max)
 {
-		int *betty;
-			int x;
-				int y;
+	int *betty;
+	int x;
+	int y;
 
-					if (min > max)
-							{
-										return (NULL);
-											}
-						y = max - min + 1;
+	if (min > max)
+	{
+		return (NULL);
+	}
+		y = max - min + 1;
 
-							betty = malloc(sizeof(int) * y);
+	betty = malloc(sizeof(int) * y);
 
-								if (betty == NULL)
-										{
-													return (NULL);
-														}
-									for (x = 0; min <= max; x++)
-											{
-														betty[x] = min++;
-															}
-										return (betty);
+	if (betty == NULL)
+	{
+		return (NULL);
+	}
+	for (x = 0; min <= max; x++)
+	{
+		betty[x] = min++;
+	}
+	return (betty);
 }
