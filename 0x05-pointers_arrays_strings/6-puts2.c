@@ -3,7 +3,11 @@
 void puts2(char *str)
 {
 	int i;
-	for (i = 0; str[i] != '\0'; i = i +2)
+	int j;
+	for (j = 0; str[j] != '\0'; j++)
+	{
+	}
+	for (i = 0; i < j; i = i +2)
 	{
 		_putchar(str[i]);
 	}
