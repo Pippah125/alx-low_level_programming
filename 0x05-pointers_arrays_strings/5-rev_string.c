@@ -9,7 +9,6 @@ void rev_string(char *s)
 {
 	int betty;
 	int i;
-	betty = 0;
 
 	for (betty = 0; s[betty] != '\0'; betty++)
 	{
@@ -18,5 +17,6 @@ void rev_string(char *s)
 	{
 		_putchar(s[i]);
 	}
+	_putchar('\n');
 
 }
