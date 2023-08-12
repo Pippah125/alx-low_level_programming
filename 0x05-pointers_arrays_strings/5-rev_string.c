@@ -12,12 +12,10 @@ void rev_string(char *s)
 
 	for (betty = 0; s[betty] != '\0'; betty++)
 	{
-		_putchar(s[betty]);
 	}
 	for(i = betty - 1; i >= 0; i--)
 	{
 		_putchar(s[i]);
 	}
-	_putchar('\n');
 
 }
