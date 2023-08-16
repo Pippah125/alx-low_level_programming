@@ -1,4 +1,5 @@
 #include"function_pointers.h"
+#include <stddef.h>
 void g(char *s);
 void g(char *s)
 {
