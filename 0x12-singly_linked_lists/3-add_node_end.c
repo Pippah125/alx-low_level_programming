@@ -10,34 +10,33 @@
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *betty;
-	list_t *tail;
+list_t *betty, *temp;
 	size_t count;
 
-	betty = malloc(sizeof(list_t));
-	
-	if(betty == NULL)
-	{
-		return(NULL);
-	}
+	new = malloc(sizeof(list_t));
+	if (betty == NULL)
+		return (NULL);
+
 	betty->str = strdup(str);
-	for(count = 0;str[count] != '\0'; count++)
+
+	for (count= 0; str[count]; count++)
 	{
 	}
-	betty ->len = count;
-	betty->next= NULL;
-	tail = *head;
-	if(*tail== NULL)
+
+	betty->len = count;
+	betty->next = NULL;
+	temp = *head;
+
+	if (temp == NULL)
 	{
 		*head = betty;
-		
 	}
 	else
 	{
-		while(tail -> next != NULL)
-		tail = tail -> next;
-		tail -> next = betty;
-	
+		while (temp->next != NULL)
+			temp = temp->next;
+		temp->next = betty;
 	}
-	return(*head);
+
+	return (*head);
 }
