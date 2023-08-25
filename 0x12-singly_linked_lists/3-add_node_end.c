@@ -3,6 +3,21 @@
 #include<string.h>
 #include<stdio.h>
 /**
+ * count - return length of string
+ * @z: string to be counted
+ * 
+ * Return: string len
+ */
+int count(const char *z) {
+	  int t = 0;
+	    while (*z != '\0') 
+	    {
+		        z++;
+			    t++;
+		}
+	      return (t);
+}
+/**
  * add_node_end - add node to the end of linked list
  * @head: original list
  * @str: string to add to node
@@ -10,33 +25,33 @@
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-list_t *betty, *temp;
-	size_t count;
-
-	new = malloc(sizeof(list_t));
-	if (betty == NULL)
-		return (NULL);
-
-	betty->str = strdup(str);
-
-	for (count= 0; str[count]; count++)
+	list_t *betty;
+	list_t *tail;
+	if(str != NULL)
 	{
+		betty = malloc(sizeof(list_t));
+	
+	if(betty == NULL)
+	{
+		return(NULL);
 	}
-
-	betty->len = count;
-	betty->next = NULL;
-	temp = *head;
-
-	if (temp == NULL)
+	betty->str = strdup(str);
+	betty->len= strlen(str);
+	betty->next= NULL;
+	if(*head == NULL)
 	{
 		*head = betty;
+		return(*head);
 	}
 	else
 	{
-		while (temp->next != NULL)
-			temp = temp->next;
-		temp->next = betty;
+		tail = *head;
+			for(; tail->next != NULL; tail = tail->next)
+				tail->next = betty;
+		return(tail);
+	
 	}
-
-	return (*head);
-}
+	
+	}
+	return(NULL);
+}}
