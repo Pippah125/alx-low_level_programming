@@ -10,7 +10,7 @@ int strlen2(char *s)
 	}
 	return(i);
 }
-int *copy(char *dest, char *src)
+char *copy(char *dest, char *src)
 {
 	int i;
 	for(i = 0; src[i] != '\0'; i++)
@@ -24,11 +24,12 @@ int *copy(char *dest, char *src)
 }
 dog_t *new_dog(char *name, float age, char *owner)
 {
+	dog_t *my_dog;
 	int new_name;
 	int new_owner;
 	new_name = 0;
 	new_owner = 0;
-	dog_t *my_dog;
+	
 	if(name != NULL && owner != NULL)
 	{
 		new_name = strlen2(name) +1;
