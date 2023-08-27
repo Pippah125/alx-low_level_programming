@@ -17,9 +17,7 @@ char *copy(char *dest, char *src)
 	{
 		dest[i] = src[i];
 	}
-	for(;dest[i] != '\0'; i++)
-	{
-	}
+	dest[i++] = '\0';
 	return(dest);
 }
 dog_t *new_dog(char *name, float age, char *owner)
