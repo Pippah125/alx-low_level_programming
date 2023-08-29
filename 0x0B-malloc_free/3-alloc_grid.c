@@ -1,6 +1,12 @@
 #include "main.h"
 #include <stdlib.h>
-
+/**
+ * alloc_grid - reserves space for a 2 dimensional array
+ * @width:row of the two dimensional array
+ * @height:column of the two dimensional array
+ *
+ * Return: 0
+ */
 int **alloc_grid(int width, int height)
 {
 	int **mem;
@@ -8,12 +14,12 @@ int **alloc_grid(int width, int height)
 
 	if (width <= 0 || height <= 0)
 	{
-		return NULL;
+		return (NULL);
 	}
 	mem = (int **)malloc(sizeof(int *) * height);
 	if (mem == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
 	for (i = 0; i < height; i++)
 	{
@@ -25,7 +31,7 @@ int **alloc_grid(int width, int height)
 				free(mem[j]);
 			}
 			free(mem);
-			return NULL;
+			return (NULL);
 		}
 	for (j = 0; j < width; j++)
 	{
@@ -33,6 +39,6 @@ int **alloc_grid(int width, int height)
 	}
 	}
 
-	return mem;
+	return (mem);
 }
 
