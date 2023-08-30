@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include"main.h"
 #include<stdlib.h>
 #include<string.h>
 int main(int argc, char *argv[])
@@ -11,7 +10,7 @@ int main(int argc, char *argv[])
 	{
 		for(i = 1; i < argc; i++)
 		{
-			e = argv[i];
+			betty = argv[i];
 			for(k = 0; k < strlen(betty); k++)
 			{
 				if(betty[k] < 48 || betty[k] > 57)
