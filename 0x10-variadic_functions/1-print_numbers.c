@@ -21,14 +21,14 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		for (m = 1; m < n; m++) 
 		{
 			value = va_arg(print, int);
-		}
 		if (separator != NULL) 
 		{
-			printf("%s%d", separator, value);
+			printf("%s", separator);
 		}
 		else
 		{	
 			printf("%d", value);
+		}
 		}
 	}
 
