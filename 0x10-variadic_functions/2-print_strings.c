@@ -1,6 +1,12 @@
 #include<stdarg.h>
 #include"variadic_functions.h"
 #include<stdio.h>
+/**
+ * print_strings - prints all elements given
+ * @separator:separates the integers
+ * @n:number of integers
+ *
+ */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list args;
@@ -23,8 +29,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			}
 			if (i != n - 1 && separator != NULL)
 			{
-				printf("%s", separator);						}											i++;
-												}
+				printf("%s", separator);
+			}
+			i++;
+		}
 												va_end(args);
 											}
 	printf("\n");
