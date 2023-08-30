@@ -34,7 +34,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
-	for(B = 0; D < C ; D++)
+	for(D = 0; D < C ; D++)
 	{
 		if (D <= A)
 		{
@@ -42,7 +42,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		}
 		if (D >= A)
 		{
-			P[D] = s2[B];
+			P[D] = s2[D - A];
 				B++;
 		}
 	}
