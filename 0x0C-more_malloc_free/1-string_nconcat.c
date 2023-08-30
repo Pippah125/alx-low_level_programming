@@ -9,11 +9,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *P;
 	if (s1 == NULL)
 	{
-		s1 = "'
+		s1 = "";
 	}
 	if (s2 == NULL)
 	{
-		s2 = ""
+		s2 = "";
 	}
 	for (A = 0; s1[A]!='\0'; A++)
 	{
@@ -23,11 +23,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	if (n >= B)
 	{
-		C = A + B
+		C = A + B;
 	}
 	else
 	{
-		C = A + n
+		C = A + n;
 	}
 	P = (char *)malloc(sizeof(char) * C + 1);
 	if ( P == NULL)
@@ -42,8 +42,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		}
 		if (D >= A)
 		{
-			P[D] = s2[B]
-				B++
+			P[D] = s2[B];
+				B++;
 		}
 	}
 	P[D] = '\0';
