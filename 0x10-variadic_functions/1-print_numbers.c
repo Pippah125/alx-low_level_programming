@@ -9,12 +9,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	unsigned int value;
 
 	va_start(print, n);
-	if (n == 0) 
-	{
-		va_end(print);
-		return;
-	} 
-	else 
+	if (n > 0) 
 	{
 		value = va_arg(print, int);
 		printf("%d", value);
