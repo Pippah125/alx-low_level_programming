@@ -37,7 +37,7 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-		return (square(n, 0));
+		return (square(n, 1));
 	}
 }
 
