@@ -20,7 +20,7 @@ int square(int m, int n)
 	}
 	else
 	{
-		return (square(n, m + 1));
+		return (square(m + 1, n));
 	}
 }
 /**
