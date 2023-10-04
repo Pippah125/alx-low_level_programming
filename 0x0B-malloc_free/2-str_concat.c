@@ -13,7 +13,6 @@ char *str_concat(char *s1, char *s2)
 	int y;
 	int x;
 	int m;
-	int n;
 
 	y = 0;
 	x = 0;
@@ -40,21 +39,24 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
+
 	m = 0;
-	n = 0;
-	while (s1[m] != '\0')
+	y = 0;
+	x = 0;
+
+	while (s1[y] != '\0')
 	{
-		betty[m] = s1[m];
+		betty[m] = s1[y];
+		y++;
 		m++;
 	}
 	
-	while (s2[n] != '\0')
+	while (s2[x] != '\0')
 	{
-		betty[m] = s2[n];
+		betty[m] = s2[x];
 		m++;
 		x++;
 	}
-	betty[m] = '\0';
 	return (betty);
 }
 
