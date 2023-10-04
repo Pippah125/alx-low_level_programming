@@ -7,7 +7,7 @@
  *
  * Return: 0
  */
-int **alloc_grid(int width, int height);
+int **alloc_grid(int width, int height)
 {
 	int **mem;
 	int x;
@@ -43,6 +43,7 @@ int **alloc_grid(int width, int height);
 		}
 	}
 	return (mem);
+
 }
 
 
