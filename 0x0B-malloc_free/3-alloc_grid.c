@@ -1,5 +1,5 @@
 #include"main.h"
-#include<stdio.h>
+#include<stdlib.h>
 /**
  * alloc_grid - returns a pointer to a 2 dimensional arry of integers with each element in the array initalized to 0
  * width:The column of the 2 dimensional array
@@ -16,7 +16,7 @@ int **alloc_grid(int width, int height)
 	{
 		return (NULL);
 	}
-	mem = (int *) malloc(sizeof(int*) * height);
+	mem = (int **) malloc(sizeof(int*) * height);
 	if (mem == NULL)
 	{
 		return (NULL);
