@@ -12,6 +12,8 @@ char *str_concat(char *s1, char *s2)
 	char *betty;
 	int y;
 	int x;
+	int m;
+	int n;
 
 	y = 0;
 	x = 0;
