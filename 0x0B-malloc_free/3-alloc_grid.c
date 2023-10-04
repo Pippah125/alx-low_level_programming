@@ -29,10 +29,10 @@ int **alloc_grid(int width, int height)
 			for(; x >= 0; x--)
 			{
 				free(mem[x]);
+			}
 				
 				free(mem);
 				return (NULL);
-			}
 		}
 	}
 	for(x = 0; x < height; x++)
