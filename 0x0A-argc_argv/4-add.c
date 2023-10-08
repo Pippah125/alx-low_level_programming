@@ -1,9 +1,8 @@
-#include"main.h"
 #include<stdlib.h>
 #include<stdio.h>
 #include<string.h>
 /**
- * main - adds positive numbers 
+ * main - adds positive numbers
  * @argc: argument count
  * @argv: argument vector
  *
@@ -12,16 +11,16 @@
 int main(int argc, char *argv[])
 {
 	int y;
-	unsigned int x; 
-	unsgined int sum;
+	unsigned int x;
+	unsigned int sum;
 	char *a;
-	
-	if(argc >1)
+
+	if (argc > 1)
 	{
 		for (y = 1; y < argc; y++)
 		{
 			a = argv[y];
-		for (x =0; x < strlen(a); x++)
+		for (x = 0; x < strlen(a); x++)
 		{
 			if (a[x] < 48 || a[x] > 57)
 			{ printf("Error\n");
@@ -31,7 +30,7 @@ int main(int argc, char *argv[])
 		sum = sum + atoi(a);
 		a++;
 		}
-		printf("%d\n",sum);
+		printf("%d\n", sum);
 	}
 	else
 	{
