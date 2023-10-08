@@ -7,12 +7,12 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	unsigned int count;
 	unsigned int length;
 
-	betty = malloc(nmemb * size);
 	length = nmemb * size;
 	if(nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}
+	betty = malloc(length);
 	if (betty == NULL)
 	{
 		return (NULL);

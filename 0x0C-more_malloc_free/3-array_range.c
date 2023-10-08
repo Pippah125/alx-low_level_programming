@@ -5,13 +5,14 @@ int *array_range(int min, int max)
 	int *betty;
 	int size;
 	int A;
-	size = max - min +1;
-	betty = malloc(size);
-	if (betty == NULL)
+
+	if (min > max)
 	{
 		return (NULL);
 	}
-	if (min > max)
+	size = max - min +1;
+	betty = malloc(sizeof(int) *size);
+	if (betty == NULL)
 	{
 		return (NULL);
 	}
