@@ -1,5 +1,12 @@
 #include<stdlib.h>
 #include"main.h"
+/**
+ * _calloc - allocate for an array of nmemb elements
+ * @nmemb:elements of array
+ * @size:number of bytes
+ *
+ * Return:0
+ */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *betty;
@@ -8,7 +15,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	unsigned int length;
 
 	length = nmemb * size;
-	if(nmemb == 0 || size == 0)
+	if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}

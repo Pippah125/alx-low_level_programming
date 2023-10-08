@@ -1,5 +1,12 @@
 #include<stdlib.h>
 #include"main.h"
+/**
+ * array_range - create an array of integers
+ * @min:minimum value in array
+ * @max:maximum value in array
+ *
+ * Return:0
+ */
 int *array_range(int min, int max)
 {
 	int *betty;
@@ -10,13 +17,13 @@ int *array_range(int min, int max)
 	{
 		return (NULL);
 	}
-	size = max - min +1;
-	betty = malloc(sizeof(int) *size);
+	size = max - min + 1;
+	betty = malloc(sizeof(int) * size);
 	if (betty == NULL)
 	{
 		return (NULL);
 	}
-	for (A = 0; A < size; A++)
+	for (A = 0; size > A; A++)
 	{
 		betty[A] = min;
 		min++;

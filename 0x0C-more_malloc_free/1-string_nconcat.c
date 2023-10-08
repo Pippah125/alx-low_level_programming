@@ -1,5 +1,13 @@
 #include"main.h"
 #include<stdlib.h>
+/**
+ * string_nconcat - adds two strings together
+ * @s1:destination string
+ * @s2:source string
+ * @n: number of byte to be added to s1
+ *
+ * Return:0
+ */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *betty;
@@ -8,19 +16,19 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	length = 0;
 	if (s1 == NULL)
 	{
-		s1 = "";
+		s1  =  "";
 	}
 	if (s2 == NULL)
 	{
-		s2 = "";
+		s2  =  "";
 	}
-	for (A = 0; s1[A]!= '\0'; A++)
+	for (A = 0; s1[A] != '\0'; A++)
 	{
 	}
-	for (B = 0; s2[B]!= '\0'; B++)
+	for (B = 0; s2[B] != '\0'; B++)
 	{
 	}
-	if(n >= B)
+	if (n >= B)
 	{
 		length = A + B;
 	}
@@ -29,7 +37,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		length = A + n;
 	}
 	betty = malloc(sizeof(char) * length + 1);
-	if(betty == NULL)
+	if (betty == NULL)
 	{
 		return (NULL);
 	}
