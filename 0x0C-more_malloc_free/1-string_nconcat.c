@@ -3,16 +3,16 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *betty;
-	int A, B, C, length;
+	unsigned int A, B, C, length;
 
 	length = 0;
 	if (s1 == NULL)
 	{
-		""
+		s1 = "";
 	}
 	if (s2 == NULL)
 	{
-		""
+		s2 = "";
 	}
 	for (A = 0; s1[A]!= '\0'; A++)
 	{

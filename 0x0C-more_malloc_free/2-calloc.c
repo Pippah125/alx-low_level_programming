@@ -5,7 +5,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	void *betty;
 	char *mem;
 	unsigned int count;
-	int length;
+	unsigned int length;
 
 	betty = malloc(nmemb * size);
 	length = nmemb * size;
