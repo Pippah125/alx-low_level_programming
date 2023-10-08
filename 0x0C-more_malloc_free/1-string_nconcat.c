@@ -34,13 +34,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 	}
 	B = 0;
-	for (C = 0; C <= length; C++)
+	for (C = 0; C < length; C++)
 	{
 		if (C <= A)
 		{
 			betty[C] = s1[C];
 		}
-		if ( C >= A)
+		if (C >= A)
 		{
 			betty[C] = s2[B];
 			B++;
