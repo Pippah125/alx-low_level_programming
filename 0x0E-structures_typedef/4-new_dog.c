@@ -6,7 +6,7 @@ char *_copy(char *dest, char *src);
 int length(char *str)
 {
 	int count;
-	for (count = 0; str[count] != '\0'; count++)
+	for (count = 0; *str != '\0'; count++)
 	{
 	}
 	return (count);
