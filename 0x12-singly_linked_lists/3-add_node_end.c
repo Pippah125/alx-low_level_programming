@@ -4,28 +4,28 @@
 #include<string.h>
 /**
  * add_node_end-adds a node to the end of list_t
- * @head:node to be added
- * @str:string to be inputed in node
+ * @head: node to be added
+ * @str: string to be inputed in node
  *
  * Return:0
  */
-int length(const char *a);
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *newlist;
 	list_t *temp;
-	if(str != NULL)
+
+	if (str !=  NULL)
 	{
 		newlist = malloc(sizeof(list_t));
-	if(newlist == NULL)
+	if (newlist == NULL)
 	{
-		return(NULL);
+		return (NULL);
 	}
-	newlist->str= strdup(str);
+	newlist->str = strdup(str);
 	newlist->len = length(str);
 	newlist->next = NULL;
 
-	if(*head == NULL)
+	if (*head == NULL)
 	{
 		*head = newlist;
 		return (*head);
@@ -33,16 +33,15 @@ list_t *add_node_end(list_t **head, const char *str)
 	else
 	{
 		temp = *head;
-		while(temp->next)
+		while (temp->next)
 		{
 			temp = temp->next;
 		}
 			temp->next = newlist;
-			return(temp);
-		
+			return (temp);
 	}
 	}
-	return(NULL);
+	return (NULL);
 }
 /**
  * length - calculates the length of a string
@@ -53,9 +52,10 @@ list_t *add_node_end(list_t **head, const char *str)
 int length(const char *a)
 {
 	int count;
-	for(count = 0; *a != '\0'; a++)
+
+	for (count = 0; *a != '\0'; a++)
 	{
 		count++;
 	}
-	return(count);
+	return (count);
 }
