@@ -12,10 +12,10 @@ int length(const char *a);
 int length(const char *a)
 {
 	  int count;
-	for(count = 0; *a != '\0'; a++)
+	for (count = 0; *a != '\0'; a++)
 	{	count++;
 	}
-	return(count);
+	return (count);
 }
 /**
  * add_node-adds a node to the beginingo of str
@@ -27,18 +27,19 @@ int length(const char *a)
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *temp;
-	if(head != NULL && str != NULL)
+
+	if (head != NULL && str != NULL)
 	{
 		temp = malloc(sizeof(list_t));
-		if(temp == NULL)
+		if (temp == NULL)
 		{
-			return(NULL);
+			return (NULL);
 		}
 		temp->str = strdup(str);
-		temp->len= length(str);
+		temp->len = length(str);
 		temp->next = *head;
 		*head = temp;
-		return(temp);
+		return (temp);
 	}
-	return(0);
+	return (0);
 }
