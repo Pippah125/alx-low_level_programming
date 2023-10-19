@@ -9,7 +9,6 @@
 void free_list(list_t *head)
 {
 	list_t *betty;
-	betty = malloc(sizeof(list_t));
 	while (head != NULL)
 	{
 		betty = head->next;
