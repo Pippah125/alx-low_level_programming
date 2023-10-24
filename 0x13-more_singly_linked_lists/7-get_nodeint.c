@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<stdio.h>
 /**
- * get_nodeint_at_index-get the information of a particular index in a linked list
+ *get_nodeint_at_index-get the information of an index in a list
  * @head:The first node of the linked list
  *@index:the index of the node to get
  *
@@ -11,14 +11,15 @@
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	unsigned int count;
-	for(count = 0; count < index; count++)
+
+	for (count = 0; count < index; count++)
 	{
-		if(head== NULL)
+		if (head  == NULL)
 		{
-			return(NULL);
+			return (NULL);
 		}
 
 		head = head->next;
 	}
-	return(head);
+	return  (head);
 }
