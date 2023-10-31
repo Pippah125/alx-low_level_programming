@@ -12,17 +12,25 @@ void close_file(int name_of_file);
 char *buffer(char *name_of_file)
 {
 	char *betty;
+
 	betty = malloc(sizeof(char) * 1024);
-	if (betty == NULL)
+	if  (betty == NULL)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", name_of_file);
 			exit(99);
 	}
-	return(betty);
+	return (betty);
 }
+/**
+ * close_file- closes file and return statement
+ * @name_of_file:file to be closed
+ *
+ * Return:0
+ */
 void close_file(int name_of_file)
 {
 	int a;
+
 	a = close(name_of_file);
 	if (a == -1)
 	{
@@ -30,10 +38,18 @@ void close_file(int name_of_file)
 		exit(100);
 	}
 }
+/**
+ * main-copies two files
+ * @argc:argument count
+ * @argv:argument vector
+ *
+ * Return:0
+ */
 int main(int argc, char *argv[])
 {
 	int src, des, read_1, write_2;
 	char *betty;
+
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
@@ -43,8 +59,7 @@ int main(int argc, char *argv[])
 	src = open(argv[1], O_RDONLY);
 	read_1 = read(src, betty, 1024);
 	des = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	do
-	{
+	do {
 		if (src == -1 || read_1 == -1)
 		{
 			dprintf(STDERR_FILENO,
@@ -53,7 +68,7 @@ int main(int argc, char *argv[])
 			exit(98);
 		}
 		write_2 = write(des, betty, read_1);
-		if(des == -1 || write_2 == -1)
+		if (des == -1 || write_2 == -1)
 		{
 			dprintf(STDERR_FILENO,
 				"Error: Can't write to %s\n", argv[2]);
@@ -61,8 +76,8 @@ int main(int argc, char *argv[])
 			exit(99);
 		}
 		read_1 = read(src, betty, 1024);
-		des = open(argv[2],O_WRONLY | O_APPEND);
-	}while(read_1 > 0);
+		des = open(argv[2], O_WRONLY | O_APPEND);
+	} while (read_1 > 0);
 	free(betty);
 	close_file(src);
 	close_file(des);
