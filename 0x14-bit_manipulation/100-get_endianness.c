@@ -1,6 +1,6 @@
 #include"main.h"
 /**
- * get_endianesses - get byte order 
+ * get_endianness- get byte order
  *
  * Return: 0
  */
@@ -9,7 +9,7 @@ int get_endianness(void)
 	int digit = 1;
 	char *order = (char *)&digit;
 
-	if(*order == 1)
+	if (*order == 1)
 	{
 		return (1);
 	}
