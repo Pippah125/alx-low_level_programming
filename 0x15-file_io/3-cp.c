@@ -62,7 +62,7 @@ int main(int argc, char *argv[])
 		}
 		read_1 = read(src, betty, 1024);
 		des = open(argv[2],O_WRONLY | O_APPEND);
-	}while(r > 0);`
+	}while(read_1 > 0);
 	free(betty);
 	close_file(src);
 	close_file(des);
