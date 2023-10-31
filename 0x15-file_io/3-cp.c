@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
 	src = open(argv[1], O_RDONLY);
 	read_1 = read(src, betty, 1024);
 	des = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	while(read_1 > 0)
+	do
 	{
 		if (src == -1 || read_1 == -1)
 		{
@@ -62,7 +62,7 @@ int main(int argc, char *argv[])
 		}
 		read_1 = read(src, betty, 1024);
 		des = open(argv[2],O_WRONLY | O_APPEND);
-	}
+	}while(r > 0);`
 	free(betty);
 	close_file(src);
 	close_file(des);
